@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+}
+body{
+    background-color: #c7f9cc;
+}
+.nav{
+    width: 100%;
+    height: 50px;
+    background-color: #22577a;
+    color: white;
+    padding-left: 20px;
+    
+}
+span{
+    line-height: 50px;
+    transition: .2s;
+}
+span:hover{
+    color: #ffbe0b;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.nav ul{
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    line-height: 50px;
+    
+}
+.nav ul li{
+    padding-left: 40px;
+    
+}
+.nav ul li a{
+    color: white;
+    transition: .2s;
+}
+
+.nav ul li:hover a{
+    color: #ffbe0b;
+    transition: .2s;
+    border-bottom: 2px solid #ffbe0b;
+}
+.container  .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 5rem;
+    color: #22577a;
+    transition: .2s;
+    
+}
+.container  .head:hover{
+     color: #ffbe0b;
+     transition: .2s;
+     cursor: pointer;
+}
+
+.main-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    position: relative;
+    /* float: right;
+    padding-right: 100px; */
+}
+
+.input-bar{
+    width: 350px;
+    height: 350px;
+    border: 1px solid transparent;
+    background-color: #219ebc;
+    color: white;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 24px;
+    text-align: center;
+    padding: 50px 50px;
+    transition: .2s;
+}
+.input-bar:hover{
+    background-color: #faa307;
+    transition: .2s;
+    transform: scale(1.1);
+}
+.input-bar  .input{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    overflow: hidden;
+}
+#input{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+}
+#input::placeholder{
+    color: #22577a;
+}
+
+.input-bar i{
+    position: absolute;
+    color: #22577a;
+    right: 10px;
+    font-size: 20px;
+}
+.input-bar .remember{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.login{
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: -35px;
+    font-size: 36px;
+}
+.para{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.check{
+    width: 20px;
+    height: 20px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    padding-right: 5px;
+}
+.btn{
+    margin-top: 30px;
+}
+.input-btn{
+    width: 150px;
+    height: 28px;
+    border-radius: 8px;
+    border: none;
+    color: #22577a;
+}
+
+.input-btn:hover{
+    background-color: #22577a;
+    color: white;
+}
+
+@media (max-width: 768px){
+    .nav ul{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #ffd60a;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        transition: .2s;
+        left: -100%;
+    }
+    nav ul.slide{
+        left: 0;
+        transition: .2s;
+    }
+    .nav ul li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .nav ul li:hover{
+        background-color: #22577a;
+    }
+    .nav ul li a{
+        color: white;
+        border: none;
+        font-size: 1.5rem;
+    }
+    .nav ul li :hover a{
+        color: #22577a;
+        border: none;
+    }
+   
+    .hamburger{
+        float: right;
+        padding-right: 20px;
+        padding-top: 12px;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 5px;
+        margin-bottom: 5px;
+        background-color: white;
+        display: block;
+    }
+    .main-input{
+        display: none;
+    }
+    
+}
